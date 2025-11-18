@@ -13,6 +13,14 @@ export default function Header() {
             {" "}
             <Link href={"/contact"}>contact</Link>{" "}
           </li>
+          {/* <li>
+            {" "}
+            <Link href={"/signin"}>signIn</Link>{" "}
+          </li>
+          <li>
+            {" "}
+            <Link href={"/signup"}>signUp</Link>{" "}
+          </li> */}
         </ul>
       </nav>
     </header>
