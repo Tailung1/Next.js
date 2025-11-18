@@ -6,7 +6,7 @@ export default async function Posts() {
     "https://jsonplaceholder.typicode.com/posts"
   );
   const response = await posts.json();
-  const reducedPosts = response.slice(1, 20);
+  const reducedPosts =  response.slice(1, 20);
 
   return (
     <div>

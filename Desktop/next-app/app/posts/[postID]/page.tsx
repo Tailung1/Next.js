@@ -1,5 +1,5 @@
-export default async function Post({ params }) {
-  const getParams = await params
+export default async function Post({ params }: { params: any }) {
+  const getParams = await params;
   const id = await getParams.postID;
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`
