@@ -1,3 +1,4 @@
+
 export default async function Post({ params }: { params: any }) {
   const getParams = await params;
   const id = await getParams.postID;
