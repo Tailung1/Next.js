@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import StyledComponentsRegistry from "@/lib/registry";
 
 export default function RootLayout({
   children,
@@ -10,7 +11,11 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <Header />
-        {children}
+        <StyledComponentsRegistry>
+          {" "}
+          {children}
+        </StyledComponentsRegistry>
+
         <Footer />
       </body>
     </html>
